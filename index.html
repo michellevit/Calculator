@@ -1,0 +1,61 @@
+<!doctype html>
+<html>
+  <head> 
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css"> 
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Calculator</title>
+  </head>
+  <body>
+      <header>Calculator</header>
+    <div id='calc-container'>
+        <div id='calc'>
+        <div id='results-container'>
+            <div id="tracked-calculation">
+                </div>
+            <div id="current-input">
+                0
+            </div>
+        </div>
+        <div class="button-row">
+            <button class="operator" onclick="percent()">%</button>
+            <button class="operator" onclick="ce()">CE</button>
+            <button class="operator" onclick="c()">C</button>
+            <button class="operator" onclick="deleteLastDigit()"><i class="fas fa-backspace"></i></button>
+        </div>    
+        <div class="button-row">
+            <button class="operator" onclick="reciprocal()">1/x</button>
+            <button class="operator" onclick="powerOfTwo()">x<sup>2</sup></button>
+            <button class="operator" onclick="squareRoot()"><sup>2</sup><i class="fas fa-square-root-alt"></i></button>
+            <button class="operator" onclick="divide()"><i class="fas fa-divide"></i></button>
+        </div> 
+        <div class="button-row">
+            <button class="number" onclick="buttonPress(event)">7</button>
+            <button class="number" onclick="buttonPress(event)">8</button>
+            <button class="number" onclick="buttonPress(event)">9</button>
+            <button class="operator" onclick="multiply()"><i class="fas fa-times"></i></button>
+        </div> 
+        <div class="button-row">
+            <button class="number" onclick="buttonPress(event)">4</button>
+            <button class="number" onclick="buttonPress(event)">5</button>
+            <button class="number" onclick="buttonPress(event)">6</button>
+            <button class="operator" onclick="subtract()"><i class="fas fa-minus"></i></button>
+        </div> 
+        <div class="button-row">
+            <button class="number" onclick="buttonPress(event)">1</button>
+            <button class="number" onclick="buttonPress(event)">2</button>
+            <button class="number" onclick="buttonPress(event)">3</button>
+            <button class="operator" onclick="add()"><i class="fas fa-plus"></i></button>
+        </div> 
+        <div class="button-row">
+            <button class="number" onclick="changePosNeg()">+/-</button>
+            <button class="number" onclick="buttonPress(event)">0</button>
+            <button class="number" onclick="buttonPress(event)">.</button>
+            <button class="operator" onclick="equals()"><i class="fas fa-equals"></i></button>
+        </div> 
+        </div> 
+        </div>
+    <script src="app.js"></script>  
+</body>
+</html>
